@@ -32,7 +32,7 @@ To get the Node server running locally:
 
 Used to register a user.
 
-**URL** : `/auth/register/`
+**URL** : `/auth/register`
 
 **Method** : `POST`
 
@@ -62,7 +62,7 @@ Used to register a user.
 
 Used to collect a Token for a registered User.
 
-**URL** : `/auth/login/`
+**URL** : `/auth/login`
 
 **Method** : `POST`
 
@@ -89,9 +89,9 @@ Used to collect a Token for a registered User.
 
 ## Home
 
-Authenticated route.
+Authenticated route by passing JWT token in header as bearer-token.
 
-**URL** : `/auth/home/`
+**URL** : `/auth/home`
 
 **Method** : `POST`
 
