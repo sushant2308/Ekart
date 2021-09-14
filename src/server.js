@@ -10,4 +10,4 @@ app.use(express.json());
 app.use("/auth", authRoute);
 
 
-app.listen(3000, () => console.log("Server Up and running"));
+app.listen(process.env.PORT || 3000, () => console.log("Server Up and running"));
