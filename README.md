@@ -26,8 +26,39 @@ To get the Node server running locally:
 - `src/routers/verify_token.js` - Verifies the JWT token
 - `src/validation/auth_validation.js` - Validates various fields before sending to database
 
+# API Endpoints
 
-# Login
+## Register
+
+Used to register a user.
+
+**URL** : `/auth/register/`
+
+**Method** : `POST`
+
+**Auth required** : NO
+
+**Data constraints**
+
+```json
+{
+    "email": "[Valid Email Address]",
+    "username": "[Minimum 6 character]",
+    "password": "[Minimum 6 character]"
+}
+```
+
+**Data example**
+
+```json
+{
+    "email": "abc@email.com",
+    "username": "sushant",
+    "password": "abcd1234"
+}
+```
+
+## Login
 
 Used to collect a Token for a registered User.
 
@@ -41,8 +72,8 @@ Used to collect a Token for a registered User.
 
 ```json
 {
-    "username": "[valid email address]",
-    "password": "[password in plain text]"
+    "username": "[Minimum 6 character]",
+    "password": "[Minimum 6 character]"
 }
 ```
 
@@ -50,7 +81,36 @@ Used to collect a Token for a registered User.
 
 ```json
 {
-    "username": "iloveauth@example.com",
+    "username": "sushant",
     "password": "abcd1234"
 }
 ```
+
+
+## Home
+
+Authenticated route.
+
+**URL** : `/auth/home/`
+
+**Method** : `POST`
+
+**Auth required** : YES
+
+**Data constraints**
+
+```header
+{
+    "bearer-token": "valid auth token",
+
+}
+```
+
+**Data example**
+
+```header
+{
+    "bearer-token": "authtoken",
+
+}
+
