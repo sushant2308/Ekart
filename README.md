@@ -27,3 +27,30 @@ To get the Node server running locally:
 - `src/validation/auth_validation.js` - Validates various fields before sending to database
 
 
+# Login
+
+Used to collect a Token for a registered User.
+
+**URL** : `/auth/login/`
+
+**Method** : `POST`
+
+**Auth required** : NO
+
+**Data constraints**
+
+```json
+{
+    "username": "[valid email address]",
+    "password": "[password in plain text]"
+}
+```
+
+**Data example**
+
+```json
+{
+    "username": "iloveauth@example.com",
+    "password": "abcd1234"
+}
+```
