@@ -87,7 +87,7 @@ To get the Node server running locally:
 ```
 
 
-- ## Home
+## Home
 
 - Authenticated route by passing JWT token in header as bearer-token.
 
