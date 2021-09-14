@@ -93,7 +93,7 @@ To get the Node server running locally:
 
 - **URL** : `/auth/home`
 
-- **Method** : `POST`
+- **Method** : `GET`
 
 - **Auth required** : YES
 
