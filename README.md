@@ -30,15 +30,15 @@ To get the Node server running locally:
 
 ## Register
 
-Used to register a user.
+- Used to register a user.
 
-**URL** : `/auth/register`
+- **URL** : `/auth/register`
 
-**Method** : `POST`
+- **Method** : `POST`
 
-**Auth required** : NO
+- **Auth required** : NO
 
-**Data constraints**
+- **Data constraints**
 
 ```json
 {
@@ -48,7 +48,7 @@ Used to register a user.
 }
 ```
 
-**Data example**
+- **Data example**
 
 ```json
 {
@@ -60,15 +60,15 @@ Used to register a user.
 
 ## Login
 
-Used to collect a Token for a registered User.
+- Used to collect a Token for a registered User.
 
-**URL** : `/auth/login`
+- **URL** : `/auth/login`
 
-**Method** : `POST`
+- **Method** : `POST`
 
-**Auth required** : NO
+- **Auth required** : NO
 
-**Data constraints**
+- **Data constraints**
 
 ```json
 {
@@ -77,7 +77,7 @@ Used to collect a Token for a registered User.
 }
 ```
 
-**Data example**
+- **Data example**
 
 ```json
 {
@@ -87,17 +87,17 @@ Used to collect a Token for a registered User.
 ```
 
 
-## Home
+- ## Home
 
-Authenticated route by passing JWT token in header as bearer-token.
+- Authenticated route by passing JWT token in header as bearer-token.
 
-**URL** : `/auth/home`
+- **URL** : `/auth/home`
 
-**Method** : `POST`
+- **Method** : `POST`
 
-**Auth required** : YES
+- **Auth required** : YES
 
-**Data constraints**
+- **Data constraints**
 
 ```header
 {
@@ -106,7 +106,7 @@ Authenticated route by passing JWT token in header as bearer-token.
 }
 ```
 
-**Data example**
+- **Data example**
 
 ```header
 {
